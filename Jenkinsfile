@@ -1,6 +1,6 @@
 node {
     stage 'SCM Checkout' {
-    git 'github.com/aishwarya2529/Test'
+    checkout scm
     }
     stage 'Compile-Package'{
     sh 'mvn package'
